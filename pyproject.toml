@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "lal_parser"
+version = "0.1.0"
+description = "Forked PyTorch implementation of the parser described in [\"Rethinking Self-Attention: Towards Interpretability in Neural Parsing\" (Mrini et al., 2020)](https://arxiv.org/abs/1911.03875), to appear at EMNLP 2020 Findings."
+authors = ["Khalil Mrini, Franck Dernoncourt, Quan Tran, Trung Bui, Walter Chang, Ndapa Nakashole, Yuval Weiss"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+torch = "^2.5.1"
+cython = "^3.0.11"
+numpy = "^2.0.0"
+benepar = "^0.2.0"
+pytorch-pretrained-bert = "^0.6.2"
+sentencepiece = "^0.2.0"
+tensorflow = "^2.18.0"
+tensorboard = "^2.18.0"
+nltk = "^3.9.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
